@@ -11,7 +11,7 @@ function Skills() {
   ]
 
   return (
-    <section id="skills" className="px-6 pt-20 pb-20 md:px-12 py-28">
+    <section id="skills" className="px-6 pt-0 pb-20 md:px-12 py-28">
       <h2 className="rv mb-16 font-display text-3xl font-extrabold md:text-7xl"><Line>Skills <span className="text-accent">&amp;</span> tools</Line></h2>
       <div className="grid gap-16 md:grid-cols-2">
         {SKILLS.map(([group, items]) => (

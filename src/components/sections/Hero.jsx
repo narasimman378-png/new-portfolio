@@ -9,7 +9,7 @@ const Line = ({ children, delay = 0 }) => (
 
 export default function Hero({ go }) {
   return (
-    <section id="top" className={`relative min-h-screen px-6 pb-16 pt-28 md:px-12 ${go ? 'go' : ''}`}>
+    <section id="top" className={`relative min-h-screen px-6 pb-10 pt-28 md:px-12 ${go ? 'go' : ''}`}>
       <p className="fade mb-4 text-sm uppercase tracking-[.25em] text-mist" style={{ transitionDelay: '1.4s' }}>{PROFILE.role} · Front End Developer</p>
       <h1 className="font-display text-[14.5vw] font-extrabold leading-[.9] tracking-tight" aria-label={PROFILE.name}>
         <Line delay={0.9}>{PROFILE.name}</Line>
