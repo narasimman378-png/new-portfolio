@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sy: 0;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+body {
+  @apply bg-bone text-ink font-sans antialiased;
+}
+
+::selection {
+  background: #FF4D1F;
+  color: #111;
+}
+
+/* masked line reveal */
+.line {
+  display: block;
+  transform: translateY(110%);
+  transition: transform 1.1s cubic-bezier(.2, .8, .2, 1);
+}
+
+.go .line {
+  transform: none;
+}
+
+/* image curtain reveal */
+.clip {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1.3s cubic-bezier(.7, 0, .2, 1);
+}
+
+.go .clip {
+  clip-path: inset(0);
+}
+
+/* soft fade-up */
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(.2, .8, .2, 1);
+}
+
+.go .fade {
+  opacity: 1;
+  transform: none;
+}
+
+/* skill bar fill */
+.bar {
+  transform: scaleX(0);
+  transition: transform 1s cubic-bezier(.2, .8, .2, 1);
+}
+
+.go .bar {
+  transform: scaleX(var(--v));
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .line,
+  .fade {
+    transform: none;
+    opacity: 1;
+  }
+
+  .clip {
+    clip-path: inset(0);
+  }
+}
+
+
+.card1.chatgpt h1 {
+  color: #000000;
+}
+
+.card1.claude h1 {
+  color: #d97757;
+}
+
+.card1.gemini h1 {
+  background: linear-gradient(90deg, #4285f4, #9b72cb, #d96570);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card1.antigravity h1 {
+  color: #000000;
+}
+
+.card1.codex h1 {
+  color: #050505;
+}
+
