@@ -6,8 +6,8 @@ const Line = ({ children }) => (
 
 function Skills() {
   const SKILLS = [
-    ['Languages', [['WordPress', 95], ['HTML & CSS', 88], ['Bootstrap', 80], ['Shopify', 60], ['Tailwind CSS', 92], ['JavaScript', 75], ['React', 80], ['TypeScript', 60], ]],
-    ['Tools & more', [['ACF', 85], ['WP Bakery', 85], ['Git & GitHub', 80], ['Responsive design', 90], ['WooCommerce', 85], ['Elementor', 80], ['SEO', 65], ['Performance marketing', 50] ]],
+    ['Languages', [['WordPress', 95], ['HTML & CSS', 88], ['Bootstrap', 80], ['Shopify', 60], ['Tailwind CSS', 92], ['JavaScript', 75], ['React', 80], ['TypeScript', 60], ['Node.js', 50] ]],
+    ['Tools & more', [['ACF', 85], ['WP Bakery', 85], ['Git & GitHub', 80], ['Responsive design', 90], ['WooCommerce', 85], ['Elementor', 80], ['SEO', 65], ['Performance marketing', 50], ['MongoDB', 40] ]],
   ]
 
   return (
